@@ -756,7 +756,7 @@ function initSdk() {
     W.logger(translate("initialize sdk"));
     var url = getHtmlVar("baseUrl") || getHtmlVar("hostUrl") || "https://hst-api.wialon.com";
     var authHash = getHtmlVar("authHash");
-    var sid = "511d5704ee56b2cbec07bb8cac947765"
+    var sid = "51cc6aa6eaadd55fcf2bdc1d8e9d53ee"
     // Init wialon session
     sess = new W.Session(url, { eventsTimeout: 5 });
     if (authHash) {
