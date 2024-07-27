@@ -1,0 +1,227 @@
+html, body {
+     height: 100%;
+     margin: 0px;
+     font-family: Arial, Helvetica, sans-serif;
+     cursor: default;
+}
+
+#page {
+    min-height: 100%;
+}
+
+#header {
+    height: 48px;
+    width: 100%;
+    background: #FFF;
+    border-bottom: 2px solid #21344f;
+    color: rgb(0, 51, 102);
+    font-size: 20px;
+}
+
+#header > * {
+    vertical-align: middle;
+}
+
+#logo {
+    margin: 7px 5px 7px 15px;
+    height: 34px;
+}
+
+#app-name {
+    display: inline-block;
+    color: #473e3f;
+}
+
+#user_info {
+    float: right;
+    margin: 13px 13px 0;
+    color: #777;
+	font-size: 16px;
+}
+
+#content {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    min-height: 100px;
+    min-width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+#left_column {
+	float: left;
+	height:100%;
+	width: 600px;
+}
+
+#right_column {
+	position: absolute;
+	left: 600px;
+	right: 0px;
+	width: auto;
+	height:100%;
+	padding: 0px;
+}
+
+#map_id {
+	width: 100%;
+	height: 100%;
+}
+
+.y-scroll-container{
+	height: 100%;
+	overflow-y: auto;
+	position: relative;
+}
+
+a{
+	color: #21344f;
+	text-decoration: none;
+}
+
+.tbl{
+	width: 100%;
+	background-color: #fff;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size:12px;
+}
+.tbl tr {
+    cursor: pointer;
+}
+.tbl tr.active {
+    background:#cfcfcf;
+}
+.tbl td{
+	padding: 3px;
+	border-bottom: 1px solid #d1ddea;
+	color: #21344f;
+}
+.tbl td[id^="unit_time"] {
+    white-space: nowrap;
+}
+
+.tbl th {
+	padding: 5px;
+	background-color: #3477d4;
+	color: #ccc;
+	text-align: left;
+}
+
+.timepicker {
+
+}
+
+.timepicker .tbl {
+    background-color:#cfcfcf;
+}
+
+.timepicker .tbl td {
+    padding: 5px;
+    text-align: center;
+    font-weight:bold;
+}
+
+.timepicker .tbl td.active {
+    background-color:#21344f;
+    color: #ccc;
+}
+
+.centered {
+	text-align: center;
+}
+
+.shorten-container {
+	max-width: 160px;
+}
+
+.shorten {
+	max-width: 160px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#icon_col {
+	min-width:24px;
+	width:24px;
+}
+
+#name_col {
+	width: 100%;
+}
+
+#lmsg_col {
+	min-width:110px;
+	width:110px;
+}
+
+#speed_col {
+	min-width:60px;
+	width:60px;
+}
+
+.filter {}
+
+.filter input {
+    display: inline-block;
+    padding: 9px 5px;
+    width: 95%;
+    background: #fff;
+    border: 0 none;
+    outline: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*---------------------- Marker tooltip ------------------------------*/
+.olMarkerLabel {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #21344f;
+	background-color: #fff;
+	width: auto;
+	padding: 2px 5px;
+	border: 1px #21344f solid;
+	z-index: 1000;
+	opacity: 0.8 !important;
+	text-align: center;
+}
+
+.leaflet-popup-tip-container {
+    display: none;
+}
+
+.leaflet-popup-content-wrapper {
+    background: none transparent;
+    box-shadow: none;
+    padding: 0;
+    text-align: inherit;
+    border-radius: 0;
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    width: auto !important;
+    line-height: inherit;
+}
+
+.label-title {
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.olMarkerLabel table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.olMarkerLabel table td{
+	font-size: 11px;
+	padding: 0px;
+	white-space: nowrap;
+}
